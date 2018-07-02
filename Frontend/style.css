@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+
+nav {
+    background-color: rgb(255, 218, 182);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30vh;
+    width: 100%;
+    padding: 10px;
+}
+
+/*.logo{
+    margin-top: -50px;
+    margin-left: 20px;
+    display: inline-block;
+    max-width: 100%;
+}*/
+
+.menu{
+    color: rgb(255, 134, 95);
+    cursor: pointer;
+    display: flex;
+    position:relative;
+    justify-content: space-around;
+    font-size: 100%;
+    padding: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+
+}
+    
+    
+
+@media(max-width: 768px){
+    .menu{
+        display:block;
+        
+}
+
+#hamburger{
+    width: 36px;
+    cursor: pointer;
+    margin-right: 0%;
+}
+
+.tracinho{
+    background-color: rgb(255, 134, 95);;
+    border-radius: 25%;
+    height: 6px;
+    margin-top: 5px;
+}
+}
