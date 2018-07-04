@@ -5,16 +5,14 @@ body{
 nav{
     background-color: rgb(255, 218, 182);
     margin-top: 0;
-    left: 0;
-    height: 40vh;
+    height: 20vh;
     width: 100%;
-    position: fixed;
 }
 
 .menu {
     background-color: rgb(255, 218, 182);
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -32,35 +30,89 @@ nav{
 ul {
     list-style-type: none;
     padding: 10px;
-    /* display: none; */
 }
 
 .lista{
     display: none;
 }
 
-#hamburger{
+#hamburguer{
     height: 36px;
     width: 36px;
-    top: 20px;
     cursor: pointer;
     margin-left: 30px;
-    margin-top: 10px;
-    position: fixed;    
+    float: left;   
 }
 
 .tracinho{
-    background-color: rgb(255, 134, 95);;
+    background-color: rgb(255, 134, 95);
     border-radius: 25%;
     height: 6px;
     margin-top: 5px;
     transition: 1.2s;
 }
 
+.imagem img{
+    width: 100%;  
+    height: 80vh;
 
-.esconder{
-    display: none;
 }
+
+#quemsomos{
+    display: flex;
+    background-color: rgb(255, 183, 129);
+    height: 40vh;
+    padding: 30px;
+}
+#quemsomos p{
+    padding: 20px;
+}
+
+#plataforma{
+    background-color: rgb(255, 183, 129);
+    height: 40vh;
+    padding: 30px;
+}
+
+#parceiros{
+    background-color: rgb(255, 183, 129);
+    height: 40vh;
+    padding: 15px;
+}
+
+#parceiros p{
+    padding: 20px;
+}
+
+#contatos{
+    background-color: rgb(255, 218, 182);
+    justify-content: space-around;
+    display: block;
+    padding: 20px;
+    height: 40vh;
+}
+
+#contatos p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 134, 95);
+}
+
+#contatos a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    color: rgb(255, 134, 95);
+    height: 30px;
+}
+
+a span{
+    padding: 10px;
+
+}
+
 
 @media(min-width: 768px){
     .menu ul{
@@ -68,15 +120,26 @@ ul {
         justify-content: space-around;
     }
     nav{
-        height: 25vh;
+        height: 20vh;
     }
     .lista {
         display: flex;
     }
 
-    .hamburger{
+    #hamburguer{
         display: none; 
     } 
+    #contatos{
+        display: flex;
+        justify-content: space-around;
+        height: 20vh;
+    }
+
+    .imagem img{
+        width: 100%;  
+        height: 80vh;
+    
+    }
 }
 
 
