@@ -1,16 +1,15 @@
+
+
+const menu = document.querySelector(".lista");
 const botao = document.querySelector("#hamburguer");
 
 
-
-function abrir(){
-    if(botao.classList.contains("hamburguer")){
-        botao.classList.remove("hamburguer");
+function acao(){
+    if(menu.classList.contains("esconder")){
+        menu.classList.remove("esconder");
+    }else{
+        menu.classList.add("esconder");
     }
-    else{
-        menu.classList.add("hamburguer");
-        botao.classList.add("hamburguer");
-    }
-    
 }
 
-botao.onclick = abrir;
+botao.onclick = acao;

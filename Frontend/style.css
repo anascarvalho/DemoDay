@@ -29,9 +29,13 @@ nav{
    
 }
 
-.menu ul li {
+ul {
     list-style-type: none;
     padding: 10px;
+    /* display: none; */
+}
+
+.lista{
     display: none;
 }
 
@@ -42,8 +46,7 @@ nav{
     cursor: pointer;
     margin-left: 30px;
     margin-top: 10px;
-    position: fixed;
-    
+    position: fixed;    
 }
 
 .tracinho{
@@ -55,6 +58,9 @@ nav{
 }
 
 
+.esconder{
+    display: none;
+}
 
 @media(min-width: 768px){
     .menu ul{
@@ -64,10 +70,13 @@ nav{
     nav{
         height: 25vh;
     }
-    .menu ul li {
+    .lista {
         display: flex;
     }
 
+    .hamburger{
+        display: none; 
+    } 
 }
 
 
