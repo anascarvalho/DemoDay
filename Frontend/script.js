@@ -1,16 +1,16 @@
-/*const menu = document.querySelector("aside");
-const botao = document.querySelector(".menu");
+const botao = document.querySelector("#hamburguer");
 
-function deslizar(){
-    if(menu.classList.contains("active")){
-        menu.classList.remove("active");
-        botao.classList.remove("active");
+
+
+function abrir(){
+    if(botao.classList.contains("hamburguer")){
+        botao.classList.remove("hamburguer");
     }
     else{
-        menu.classList.add("active");
-        botao.classList.add("active");
+        menu.classList.add("hamburguer");
+        botao.classList.add("hamburguer");
     }
     
 }
 
-botao.onclick = deslizar;*/
+botao.onclick = abrir;

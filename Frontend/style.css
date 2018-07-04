@@ -2,49 +2,48 @@ body{
     margin: 0;
 }
 
-
-nav {
+nav{
     background-color: rgb(255, 218, 182);
-    position: fixed;
-    top: 0;
+    margin-top: 0;
     left: 0;
-    height: 30vh;
+    height: 40vh;
     width: 100%;
-    padding: 10px;
+    position: fixed;
 }
 
-/*.logo{
-    margin-top: -50px;
-    margin-left: 20px;
+.menu {
+    background-color: rgb(255, 218, 182);
     display: inline-block;
-    max-width: 100%;
-}*/
-
-.menu{
-    color: rgb(255, 134, 95);
-    cursor: pointer;
-    display: flex;
-    position:relative;
-    justify-content: space-around;
-    font-size: 100%;
-    padding: 20px;
-    font-weight: bold;
-    box-sizing: border-box;
-
+    margin-top: 60px;
+    position: relative;
 }
-    
-    
 
-@media(max-width: 768px){
-    .menu{
-        display:block;
-        
+
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(255, 134, 95);
+    margin-left: 20px;
+   
+}
+
+.menu ul li {
+    list-style-type: none;
+    padding: 10px;
+    display: none;
 }
 
 #hamburger{
+    height: 36px;
     width: 36px;
+    top: 20px;
     cursor: pointer;
-    margin-right: 0%;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: fixed;
+    
 }
 
 .tracinho{
@@ -52,5 +51,33 @@ nav {
     border-radius: 25%;
     height: 6px;
     margin-top: 5px;
+    transition: 1.2s;
 }
+
+
+
+@media(min-width: 768px){
+    .menu ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav{
+        height: 25vh;
+    }
+    .menu ul li {
+        display: flex;
+    }
+
 }
+
+
+
+
+
+
+
+    
+
+
+
+
