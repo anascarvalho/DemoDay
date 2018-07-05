@@ -29,11 +29,18 @@ nav{
 
 ul {
     list-style-type: none;
-    padding: 10px;
+}
+
+ul li{
+    padding: 5px;
 }
 
 .lista{
     display: none;
+    padding: 40px;
+    float: left;
+    position: relative;
+    margin-left: 0px;
 }
 
 #hamburguer{
@@ -42,6 +49,8 @@ ul {
     cursor: pointer;
     margin-left: 30px;
     float: left;   
+    margin-top: 10px;
+    position: fixed;
 }
 
 .tracinho{
@@ -50,6 +59,14 @@ ul {
     height: 6px;
     margin-top: 5px;
     transition: 1.2s;
+}
+
+.lista.active{
+    display: block;
+}
+
+nav.active{
+    height: 60vh;
 }
 
 .imagem img{
@@ -120,7 +137,7 @@ a span{
         justify-content: space-around;
     }
     nav{
-        height: 20vh;
+        height: 25vh;
     }
     .lista {
         display: flex;
