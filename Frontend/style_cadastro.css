@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: rgb(255, 218, 182);
+    margin-top: 0;
+    height: 20vh;
+    width: 100vw;
+}
+
+.menu {
+    background-color: rgb(255, 218, 182);
+    display: inline-block;
+    margin-top: 20px;
+    position:relative;
+}
+
+#logo{
+    display: none;
+
+} 
+#logoResponsivo{
+    display: flex;
+    margin-left: 80vw;
+
+} 
+
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(255, 93, 35);
+    margin-left: 20px;
+   
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li{
+    padding: 5px;
+}
+
+.lista{
+    display: none;
+    padding: 40px;
+    float: left;
+    position: relative;
+    margin-left: 0px;
+}
+
+#hamburguer{
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    margin-left: 30px;
+    float: left;   
+    margin-top: 10px;
+    position: fixed;
+}
+
+.tracinho{
+    background-color: rgb(255, 93, 35);
+    border-radius: 25%;
+    height: 6px;
+    margin-top: 5px;
+    transition: 1.2s;
+}
+
+.lista.active{
+    display: block;
+}
+
+nav.active{
+    height: 60vh;
+}
+
+h1{
+    margin: 0;
+    font-size: 50px
+}
+
+#fundo{
+    background-color: rgb(255, 93, 35);
+    max-height: 100%;
+    width: 100vw;
+}
+
+#formulario{
+    background-color: rgba(255, 201, 148);
+    height: 100vh;
+    width: 70vw;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+}
+
+input{
+    margin-right:  80vw  ;
+}
+
+#contatos{
+    background-color: rgb(255, 218, 182);
+    justify-content: space-around;
+    display: block;
+    padding: 20px;
+    height: 40vh;
+}
+
+#contatos p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 93, 35);
+    height: 20px;
+}
+
+#contatos a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    color: rgb(255, 93, 35);
+    height: 30px;
+}
+
+a span{
+    padding: 10px;
+
+}
+
+
+@media(min-width: 768px){
+    .menu ul{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .menu{
+        width: 100vw;
+        height: 20px;
+    }
+    nav{
+        height: 25vh;
+    }
+    .lista {
+        display: flex;
+    }
+
+    #hamburguer{
+        display: none; 
+    } 
+    #contatos{
+        display: flex;
+        justify-content: space-around;
+        height: 20vh;
+    }
+
+    .imagem img{
+        width: 100%;  
+        height: 80vh;
+    
+    }
+
+    #logo{
+        display: flex; 
+    } 
+
+    #logoResponsivo{
+        display: none;
+    
+    } 
+
+    #formulario{
+        width: 60vw;
+        
+    }
+}
